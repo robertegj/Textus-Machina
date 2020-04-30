@@ -5,7 +5,7 @@ __NLP__ (Natural language processing) tool featuring:
 - Part-Of-Speech (POS) Tokenization 
 - Question Answering
 ## See it live
-![Web-based UI in use](http://github.com/robertegj/Textus-Machina/blob/master/screenshot.gif)
+![Web-based UI in use](https://github.com/robertegj/Textus-Machina/blob/master/screenshot.gif)
 ## Installation Instructions
 Make sure you have Python3 or above installed, then:  
 pip install -r requirements.txt  
