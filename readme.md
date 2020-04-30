@@ -1,6 +1,6 @@
 # Textus Machina
-## A text identification machine
-NLP (Natural language processing) tool featuring
+## A text identification machine for the web
+__NLP__ (Natural language processing) tool featuring:
 - Sentiment Analysis
 - Part-Of-Speech (POS) Tokenization 
 - Question Answering
