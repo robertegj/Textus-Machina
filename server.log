@@ -1,0 +1,455 @@
+2020-04-23 18:45:32,188 INFO app MainThread : EOF REACHED
+2020-04-23 18:45:32,231 INFO app MainThread : EOF REACHED
+2020-04-23 18:45:34,158 INFO app MainThread : <Request 'http://54.202.153.199:8000/api?command=getCommands' [GET]>
+2020-04-23 18:45:34,160 ERROR app MainThread : Exception on /api [GET]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/flask/app.py", line 2130, in make_response
+    " {rv.__class__.__name__}.".format(rv=rv)
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a list.
+2020-04-23 18:46:49,600 INFO app MainThread : EOF REACHED
+2020-04-23 18:46:49,626 INFO werkzeug MainThread :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2020-04-23 18:46:55,358 INFO app Thread-1 : <Request 'http://54.202.153.199:5000/api?command=getCommands' [GET]>
+2020-04-23 18:46:55,360 ERROR app Thread-1 : Exception on /api [GET]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/flask/app.py", line 2130, in make_response
+    " {rv.__class__.__name__}.".format(rv=rv)
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a list.
+2020-04-23 18:46:55,362 INFO werkzeug Thread-1 : 108.190.180.209 - - [23/Apr/2020 18:46:55] "[35m[1mGET /api?command=getCommands HTTP/1.1[0m" 500 -
+2020-04-23 18:46:55,680 INFO werkzeug Thread-2 : 108.190.180.209 - - [23/Apr/2020 18:46:55] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2020-04-23 18:47:43,413 INFO app MainThread : EOF REACHED
+2020-04-23 18:47:43,421 INFO werkzeug MainThread :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2020-04-23 18:47:46,043 INFO app Thread-1 : <Request 'http://54.202.153.199:5000/api?command=getCommands' [GET]>
+2020-04-23 18:47:46,046 INFO werkzeug Thread-1 : 108.190.180.209 - - [23/Apr/2020 18:47:46] "[37mGET /api?command=getCommands HTTP/1.1[0m" 200 -
+2020-04-23 18:48:13,343 INFO werkzeug Thread-2 : 108.190.180.209 - - [23/Apr/2020 18:48:13] "[37mGET / HTTP/1.1[0m" 200 -
+2020-04-23 18:48:13,773 INFO werkzeug Thread-3 : 108.190.180.209 - - [23/Apr/2020 18:48:13] "[37mGET /static/bootstrap.min.css HTTP/1.1[0m" 200 -
+2020-04-23 18:48:13,777 INFO werkzeug Thread-5 : 108.190.180.209 - - [23/Apr/2020 18:48:13] "[37mGET /static/popper.min.js HTTP/1.1[0m" 200 -
+2020-04-23 18:48:13,781 INFO werkzeug Thread-4 : 108.190.180.209 - - [23/Apr/2020 18:48:13] "[37mGET /static/jquery-3.4.1.min.js HTTP/1.1[0m" 200 -
+2020-04-23 18:48:13,783 INFO werkzeug Thread-6 : 108.190.180.209 - - [23/Apr/2020 18:48:13] "[37mGET /static/bootstrap.min.js HTTP/1.1[0m" 200 -
+2020-04-23 18:48:17,867 INFO app Thread-7 : <Request 'http://54.202.153.199:5000/api?command=getCompound&text=wondeful!' [GET]>
+2020-04-23 18:48:17,868 INFO app Thread-7 : wondeful!
+2020-04-23 18:48:21,232 INFO werkzeug Thread-7 : 108.190.180.209 - - [23/Apr/2020 18:48:21] "[37mGET /api?command=getCompound&text=wondeful! HTTP/1.1[0m" 200 -
+2020-04-23 18:48:27,064 INFO app Thread-8 : <Request 'http://54.202.153.199:5000/api?command=getCompound&text=amazinggg!!!' [GET]>
+2020-04-23 18:48:27,066 INFO app Thread-8 : amazinggg!!!
+2020-04-23 18:48:27,070 INFO werkzeug Thread-8 : 108.190.180.209 - - [23/Apr/2020 18:48:27] "[37mGET /api?command=getCompound&text=amazinggg!!! HTTP/1.1[0m" 200 -
+2020-04-23 18:52:51,570 INFO werkzeug Thread-9 : 108.190.180.209 - - [23/Apr/2020 18:52:51] "[37mGET / HTTP/1.1[0m" 200 -
+2020-04-23 18:52:53,837 INFO werkzeug Thread-10 : 108.190.180.209 - - [23/Apr/2020 18:52:53] "[33mGET /static/popper.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 18:52:53,839 INFO werkzeug Thread-11 : 108.190.180.209 - - [23/Apr/2020 18:52:53] "[33mGET /static/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 18:52:53,864 INFO werkzeug Thread-12 : 108.190.180.209 - - [23/Apr/2020 18:52:53] "[33mGET /static/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+2020-04-23 18:54:24,010 INFO app MainThread : <Request 'http://54.202.153.199:8000/api?command=getCommands' [GET]>
+2020-04-23 18:54:24,011 ERROR app MainThread : Exception on /api [GET]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/flask/app.py", line 2130, in make_response
+    " {rv.__class__.__name__}.".format(rv=rv)
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a list.
+2020-04-23 18:54:33,088 INFO app Thread-13 : <Request 'http://54.202.153.199:5000/api?command=getCommands' [GET]>
+2020-04-23 18:54:33,090 INFO werkzeug Thread-13 : 108.190.180.209 - - [23/Apr/2020 18:54:33] "[37mGET /api?command=getCommands HTTP/1.1[0m" 200 -
+2020-04-23 18:56:45,140 INFO werkzeug Thread-14 : 108.190.180.209 - - [23/Apr/2020 18:56:45] "[37mGET / HTTP/1.1[0m" 200 -
+2020-04-23 18:56:47,365 INFO werkzeug Thread-15 : 108.190.180.209 - - [23/Apr/2020 18:56:47] "[33mGET /static/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+2020-04-23 18:56:47,368 INFO werkzeug Thread-16 : 108.190.180.209 - - [23/Apr/2020 18:56:47] "[33mGET /static/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 18:56:47,369 INFO werkzeug Thread-17 : 108.190.180.209 - - [23/Apr/2020 18:56:47] "[33mGET /static/popper.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 18:56:53,303 INFO werkzeug Thread-18 : 108.190.180.209 - - [23/Apr/2020 18:56:53] "[37mGET / HTTP/1.1[0m" 200 -
+2020-04-23 18:56:53,604 INFO werkzeug Thread-19 : 108.190.180.209 - - [23/Apr/2020 18:56:53] "[33mGET /static/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 18:56:53,606 INFO werkzeug Thread-20 : 108.190.180.209 - - [23/Apr/2020 18:56:53] "[33mGET /static/popper.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 18:56:53,660 INFO werkzeug Thread-21 : 108.190.180.209 - - [23/Apr/2020 18:56:53] "[33mGET /static/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+2020-04-23 18:56:53,818 INFO werkzeug Thread-22 : 108.190.180.209 - - [23/Apr/2020 18:56:53] "[33mGET /static/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 18:56:53,822 INFO werkzeug Thread-23 : 108.190.180.209 - - [23/Apr/2020 18:56:53] "[33mGET /static/popper.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 18:57:16,572 INFO werkzeug Thread-24 : 108.190.180.209 - - [23/Apr/2020 18:57:16] "[37mGET / HTTP/1.1[0m" 200 -
+2020-04-23 18:57:16,831 INFO werkzeug Thread-25 : 108.190.180.209 - - [23/Apr/2020 18:57:16] "[37mGET /static/bootstrap.min.js HTTP/1.1[0m" 200 -
+2020-04-23 18:57:16,834 INFO werkzeug Thread-27 : 108.190.180.209 - - [23/Apr/2020 18:57:16] "[37mGET /static/popper.min.js HTTP/1.1[0m" 200 -
+2020-04-23 18:57:16,836 INFO werkzeug Thread-26 : 108.190.180.209 - - [23/Apr/2020 18:57:16] "[37mGET /static/jquery-3.4.1.min.js HTTP/1.1[0m" 200 -
+2020-04-23 18:57:16,839 INFO werkzeug Thread-28 : 108.190.180.209 - - [23/Apr/2020 18:57:16] "[37mGET /static/bootstrap.min.css HTTP/1.1[0m" 200 -
+2020-04-23 18:57:17,455 INFO werkzeug Thread-29 : 108.190.180.209 - - [23/Apr/2020 18:57:17] "[33mGET /static/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+2020-04-23 18:57:17,456 INFO werkzeug Thread-30 : 108.190.180.209 - - [23/Apr/2020 18:57:17] "[33mGET /static/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 18:57:17,459 INFO werkzeug Thread-31 : 108.190.180.209 - - [23/Apr/2020 18:57:17] "[33mGET /static/popper.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 18:57:17,662 INFO werkzeug Thread-32 : 108.190.180.209 - - [23/Apr/2020 18:57:17] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2020-04-23 18:57:17,722 INFO werkzeug Thread-33 : 108.190.180.209 - - [23/Apr/2020 18:57:17] "[33mGET /static/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 18:57:17,724 INFO werkzeug Thread-34 : 108.190.180.209 - - [23/Apr/2020 18:57:17] "[33mGET /static/popper.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 18:58:03,836 INFO app MainThread : EOF REACHED
+2020-04-23 18:58:03,872 INFO werkzeug MainThread :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2020-04-23 18:58:05,640 INFO werkzeug Thread-1 : 108.190.180.209 - - [23/Apr/2020 18:58:05] "[37mGET / HTTP/1.1[0m" 200 -
+2020-04-23 18:58:06,052 INFO werkzeug Thread-2 : 108.190.180.209 - - [23/Apr/2020 18:58:06] "[33mGET /static/popper.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 18:58:06,054 INFO werkzeug Thread-3 : 108.190.180.209 - - [23/Apr/2020 18:58:06] "[33mGET /static/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 18:58:06,056 INFO werkzeug Thread-4 : 108.190.180.209 - - [23/Apr/2020 18:58:06] "[33mGET /static/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+2020-04-23 18:58:06,270 INFO app Thread-5 : <Request 'http://54.202.153.199:5000/api?command=getCommands' [GET]>
+2020-04-23 18:58:06,272 INFO werkzeug Thread-5 : 108.190.180.209 - - [23/Apr/2020 18:58:06] "[37mGET /api?command=getCommands HTTP/1.1[0m" 200 -
+2020-04-23 18:58:06,301 INFO werkzeug Thread-6 : 108.190.180.209 - - [23/Apr/2020 18:58:06] "[33mGET /static/popper.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 18:58:06,303 INFO werkzeug Thread-7 : 108.190.180.209 - - [23/Apr/2020 18:58:06] "[33mGET /static/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 18:58:55,685 INFO werkzeug Thread-8 : 108.190.180.209 - - [23/Apr/2020 18:58:55] "[37mGET / HTTP/1.1[0m" 200 -
+2020-04-23 18:58:55,967 INFO werkzeug Thread-9 : 108.190.180.209 - - [23/Apr/2020 18:58:55] "[37mGET /static/bootstrap.min.css HTTP/1.1[0m" 200 -
+2020-04-23 18:58:55,979 INFO werkzeug Thread-10 : 108.190.180.209 - - [23/Apr/2020 18:58:55] "[37mGET /static/bootstrap.min.js HTTP/1.1[0m" 200 -
+2020-04-23 18:58:55,981 INFO werkzeug Thread-11 : 108.190.180.209 - - [23/Apr/2020 18:58:55] "[37mGET /static/jquery-3.4.1.min.js HTTP/1.1[0m" 200 -
+2020-04-23 18:58:55,983 INFO werkzeug Thread-12 : 108.190.180.209 - - [23/Apr/2020 18:58:55] "[37mGET /static/popper.min.js HTTP/1.1[0m" 200 -
+2020-04-23 18:58:56,556 INFO werkzeug Thread-14 : 108.190.180.209 - - [23/Apr/2020 18:58:56] "[33mGET /static/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+2020-04-23 18:58:56,558 INFO werkzeug Thread-13 : 108.190.180.209 - - [23/Apr/2020 18:58:56] "[33mGET /static/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 18:58:56,560 INFO werkzeug Thread-15 : 108.190.180.209 - - [23/Apr/2020 18:58:56] "[33mGET /static/popper.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 18:58:56,745 INFO app Thread-16 : <Request 'http://54.202.153.199:5000/api?command=getCommands' [GET]>
+2020-04-23 18:58:56,746 INFO werkzeug Thread-16 : 108.190.180.209 - - [23/Apr/2020 18:58:56] "[37mGET /api?command=getCommands HTTP/1.1[0m" 200 -
+2020-04-23 18:58:56,748 INFO werkzeug Thread-17 : 108.190.180.209 - - [23/Apr/2020 18:58:56] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2020-04-23 18:58:56,790 INFO werkzeug Thread-18 : 108.190.180.209 - - [23/Apr/2020 18:58:56] "[33mGET /static/popper.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 18:58:56,794 INFO werkzeug Thread-19 : 108.190.180.209 - - [23/Apr/2020 18:58:56] "[33mGET /static/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:00:28,799 INFO app MainThread : EOF REACHED
+2020-04-23 19:00:28,805 INFO werkzeug MainThread :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2020-04-23 19:00:31,195 INFO werkzeug Thread-1 : 108.190.180.209 - - [23/Apr/2020 19:00:31] "[37mGET / HTTP/1.1[0m" 200 -
+2020-04-23 19:00:31,514 INFO werkzeug Thread-2 : 108.190.180.209 - - [23/Apr/2020 19:00:31] "[33mGET /static/popper.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:00:31,516 INFO werkzeug Thread-3 : 108.190.180.209 - - [23/Apr/2020 19:00:31] "[33mGET /static/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+2020-04-23 19:00:31,518 INFO werkzeug Thread-4 : 108.190.180.209 - - [23/Apr/2020 19:00:31] "[33mGET /static/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:00:31,753 INFO app Thread-5 : <Request 'http://54.202.153.199:5000/api?command=getCommands' [GET]>
+2020-04-23 19:00:31,754 INFO werkzeug Thread-5 : 108.190.180.209 - - [23/Apr/2020 19:00:31] "[37mGET /api?command=getCommands HTTP/1.1[0m" 200 -
+2020-04-23 19:00:31,756 INFO werkzeug Thread-6 : 108.190.180.209 - - [23/Apr/2020 19:00:31] "[33mGET /static/popper.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:00:31,774 INFO werkzeug Thread-7 : 108.190.180.209 - - [23/Apr/2020 19:00:31] "[33mGET /static/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:05:39,256 INFO werkzeug Thread-8 : 108.190.180.209 - - [23/Apr/2020 19:05:39] "[37mGET / HTTP/1.1[0m" 200 -
+2020-04-23 19:05:39,517 INFO werkzeug Thread-9 : 108.190.180.209 - - [23/Apr/2020 19:05:39] "[37mGET /static/bootstrap.min.css HTTP/1.1[0m" 200 -
+2020-04-23 19:05:39,519 INFO werkzeug Thread-10 : 108.190.180.209 - - [23/Apr/2020 19:05:39] "[37mGET /static/bootstrap.min.js HTTP/1.1[0m" 200 -
+2020-04-23 19:05:39,524 INFO werkzeug Thread-11 : 108.190.180.209 - - [23/Apr/2020 19:05:39] "[37mGET /static/jquery-3.4.1.min.js HTTP/1.1[0m" 200 -
+2020-04-23 19:05:39,525 INFO werkzeug Thread-12 : 108.190.180.209 - - [23/Apr/2020 19:05:39] "[37mGET /static/popper.min.js HTTP/1.1[0m" 200 -
+2020-04-23 19:05:40,105 INFO werkzeug Thread-13 : 108.190.180.209 - - [23/Apr/2020 19:05:40] "[33mGET /static/popper.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:05:40,108 INFO werkzeug Thread-14 : 108.190.180.209 - - [23/Apr/2020 19:05:40] "[33mGET /static/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+2020-04-23 19:05:40,109 INFO werkzeug Thread-15 : 108.190.180.209 - - [23/Apr/2020 19:05:40] "[33mGET /static/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:05:40,312 INFO app Thread-16 : <Request 'http://54.202.153.199:5000/api?command=getCommands' [GET]>
+2020-04-23 19:05:40,314 INFO werkzeug Thread-16 : 108.190.180.209 - - [23/Apr/2020 19:05:40] "[37mGET /api?command=getCommands HTTP/1.1[0m" 200 -
+2020-04-23 19:05:40,315 INFO werkzeug Thread-17 : 108.190.180.209 - - [23/Apr/2020 19:05:40] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2020-04-23 19:05:40,347 INFO werkzeug Thread-18 : 108.190.180.209 - - [23/Apr/2020 19:05:40] "[33mGET /static/popper.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:05:40,349 INFO werkzeug Thread-19 : 108.190.180.209 - - [23/Apr/2020 19:05:40] "[33mGET /static/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:05:59,556 INFO werkzeug Thread-20 : 108.190.180.209 - - [23/Apr/2020 19:05:59] "[37mGET / HTTP/1.1[0m" 200 -
+2020-04-23 19:05:59,824 INFO werkzeug Thread-21 : 108.190.180.209 - - [23/Apr/2020 19:05:59] "[37mGET /static/bootstrap.min.css HTTP/1.1[0m" 200 -
+2020-04-23 19:05:59,826 INFO werkzeug Thread-22 : 108.190.180.209 - - [23/Apr/2020 19:05:59] "[37mGET /static/bootstrap.min.js HTTP/1.1[0m" 200 -
+2020-04-23 19:05:59,828 INFO werkzeug Thread-23 : 108.190.180.209 - - [23/Apr/2020 19:05:59] "[37mGET /static/jquery-3.4.1.min.js HTTP/1.1[0m" 200 -
+2020-04-23 19:05:59,831 INFO werkzeug Thread-24 : 108.190.180.209 - - [23/Apr/2020 19:05:59] "[37mGET /static/popper.min.js HTTP/1.1[0m" 200 -
+2020-04-23 19:06:00,419 INFO werkzeug Thread-25 : 108.190.180.209 - - [23/Apr/2020 19:06:00] "[33mGET /static/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+2020-04-23 19:06:00,442 INFO werkzeug Thread-26 : 108.190.180.209 - - [23/Apr/2020 19:06:00] "[33mGET /static/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:06:00,443 INFO werkzeug Thread-27 : 108.190.180.209 - - [23/Apr/2020 19:06:00] "[33mGET /static/popper.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:06:00,640 INFO app Thread-28 : <Request 'http://54.202.153.199:5000/api?command=getCommands' [GET]>
+2020-04-23 19:06:00,641 INFO werkzeug Thread-28 : 108.190.180.209 - - [23/Apr/2020 19:06:00] "[37mGET /api?command=getCommands HTTP/1.1[0m" 200 -
+2020-04-23 19:06:00,646 INFO werkzeug Thread-29 : 108.190.180.209 - - [23/Apr/2020 19:06:00] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2020-04-23 19:06:00,666 INFO werkzeug Thread-30 : 108.190.180.209 - - [23/Apr/2020 19:06:00] "[33mGET /static/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:06:00,671 INFO werkzeug Thread-31 : 108.190.180.209 - - [23/Apr/2020 19:06:00] "[33mGET /static/popper.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:06:10,269 INFO app MainThread : EOF REACHED
+2020-04-23 19:06:10,315 INFO werkzeug MainThread :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2020-04-23 19:06:11,224 INFO werkzeug Thread-1 : 108.190.180.209 - - [23/Apr/2020 19:06:11] "[37mGET / HTTP/1.1[0m" 200 -
+2020-04-23 19:06:11,507 INFO werkzeug Thread-2 : 108.190.180.209 - - [23/Apr/2020 19:06:11] "[33mGET /static/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:06:11,509 INFO werkzeug Thread-3 : 108.190.180.209 - - [23/Apr/2020 19:06:11] "[33mGET /static/popper.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:06:11,582 INFO werkzeug Thread-4 : 108.190.180.209 - - [23/Apr/2020 19:06:11] "[33mGET /static/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+2020-04-23 19:06:11,718 INFO werkzeug Thread-5 : 108.190.180.209 - - [23/Apr/2020 19:06:11] "[33mGET /static/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:06:11,720 INFO app Thread-6 : <Request 'http://54.202.153.199:5000/api?command=getCommands' [GET]>
+2020-04-23 19:06:11,721 INFO werkzeug Thread-6 : 108.190.180.209 - - [23/Apr/2020 19:06:11] "[37mGET /api?command=getCommands HTTP/1.1[0m" 200 -
+2020-04-23 19:06:11,732 INFO werkzeug Thread-7 : 108.190.180.209 - - [23/Apr/2020 19:06:11] "[33mGET /static/popper.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:06:14,496 INFO werkzeug Thread-8 : 108.190.180.209 - - [23/Apr/2020 19:06:14] "[37mGET / HTTP/1.1[0m" 200 -
+2020-04-23 19:06:14,848 INFO werkzeug Thread-11 : 108.190.180.209 - - [23/Apr/2020 19:06:14] "[37mGET /static/bootstrap.min.css HTTP/1.1[0m" 200 -
+2020-04-23 19:06:14,852 INFO werkzeug Thread-9 : 108.190.180.209 - - [23/Apr/2020 19:06:14] "[37mGET /static/jquery-3.4.1.min.js HTTP/1.1[0m" 200 -
+2020-04-23 19:06:14,853 INFO werkzeug Thread-10 : 108.190.180.209 - - [23/Apr/2020 19:06:14] "[37mGET /static/popper.min.js HTTP/1.1[0m" 200 -
+2020-04-23 19:06:14,856 INFO werkzeug Thread-12 : 108.190.180.209 - - [23/Apr/2020 19:06:14] "[37mGET /static/bootstrap.min.js HTTP/1.1[0m" 200 -
+2020-04-23 19:06:15,392 INFO werkzeug Thread-13 : 108.190.180.209 - - [23/Apr/2020 19:06:15] "[33mGET /static/popper.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:06:15,397 INFO werkzeug Thread-14 : 108.190.180.209 - - [23/Apr/2020 19:06:15] "[33mGET /static/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:06:15,437 INFO werkzeug Thread-15 : 108.190.180.209 - - [23/Apr/2020 19:06:15] "[33mGET /static/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+2020-04-23 19:06:15,592 INFO app Thread-16 : <Request 'http://54.202.153.199:5000/api?command=getCommands' [GET]>
+2020-04-23 19:06:15,593 INFO werkzeug Thread-16 : 108.190.180.209 - - [23/Apr/2020 19:06:15] "[37mGET /api?command=getCommands HTTP/1.1[0m" 200 -
+2020-04-23 19:06:15,616 INFO werkzeug Thread-18 : 108.190.180.209 - - [23/Apr/2020 19:06:15] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2020-04-23 19:06:15,618 INFO werkzeug Thread-17 : 108.190.180.209 - - [23/Apr/2020 19:06:15] "[33mGET /static/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:06:15,621 INFO werkzeug Thread-19 : 108.190.180.209 - - [23/Apr/2020 19:06:15] "[33mGET /static/popper.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:06:54,388 INFO werkzeug Thread-20 : 108.190.180.209 - - [23/Apr/2020 19:06:54] "[37mGET / HTTP/1.1[0m" 200 -
+2020-04-23 19:06:54,639 INFO werkzeug Thread-21 : 108.190.180.209 - - [23/Apr/2020 19:06:54] "[37mGET /static/bootstrap.min.css HTTP/1.1[0m" 200 -
+2020-04-23 19:06:54,640 INFO werkzeug Thread-22 : 108.190.180.209 - - [23/Apr/2020 19:06:54] "[37mGET /static/popper.min.js HTTP/1.1[0m" 200 -
+2020-04-23 19:06:54,642 INFO werkzeug Thread-23 : 108.190.180.209 - - [23/Apr/2020 19:06:54] "[37mGET /static/bootstrap.min.js HTTP/1.1[0m" 200 -
+2020-04-23 19:06:54,645 INFO werkzeug Thread-24 : 108.190.180.209 - - [23/Apr/2020 19:06:54] "[37mGET /static/jquery-3.4.1.min.js HTTP/1.1[0m" 200 -
+2020-04-23 19:06:55,295 INFO werkzeug Thread-25 : 108.190.180.209 - - [23/Apr/2020 19:06:55] "[33mGET /static/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:06:55,296 INFO werkzeug Thread-26 : 108.190.180.209 - - [23/Apr/2020 19:06:55] "[33mGET /static/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+2020-04-23 19:06:55,299 INFO werkzeug Thread-27 : 108.190.180.209 - - [23/Apr/2020 19:06:55] "[33mGET /static/popper.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:06:55,521 INFO werkzeug Thread-28 : 108.190.180.209 - - [23/Apr/2020 19:06:55] "[33mGET /static/popper.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:06:55,523 INFO werkzeug Thread-29 : 108.190.180.209 - - [23/Apr/2020 19:06:55] "[33mGET /static/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:06:55,673 INFO app Thread-30 : <Request 'http://54.202.153.199:5000/api?command=getCommands' [GET]>
+2020-04-23 19:06:55,675 INFO werkzeug Thread-30 : 108.190.180.209 - - [23/Apr/2020 19:06:55] "[37mGET /api?command=getCommands HTTP/1.1[0m" 200 -
+2020-04-23 19:06:55,677 INFO werkzeug Thread-31 : 108.190.180.209 - - [23/Apr/2020 19:06:55] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2020-04-23 19:07:05,411 INFO app MainThread : EOF REACHED
+2020-04-23 19:07:05,414 INFO werkzeug MainThread :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2020-04-23 19:07:08,183 INFO werkzeug Thread-1 : 108.190.180.209 - - [23/Apr/2020 19:07:08] "[37mGET / HTTP/1.1[0m" 200 -
+2020-04-23 19:07:08,440 INFO werkzeug Thread-3 : 108.190.180.209 - - [23/Apr/2020 19:07:08] "[37mGET /static/bootstrap.min.css HTTP/1.1[0m" 200 -
+2020-04-23 19:07:08,443 INFO werkzeug Thread-2 : 108.190.180.209 - - [23/Apr/2020 19:07:08] "[37mGET /static/bootstrap.min.js HTTP/1.1[0m" 200 -
+2020-04-23 19:07:08,452 INFO werkzeug Thread-4 : 108.190.180.209 - - [23/Apr/2020 19:07:08] "[37mGET /static/popper.min.js HTTP/1.1[0m" 200 -
+2020-04-23 19:07:08,454 INFO werkzeug Thread-5 : 108.190.180.209 - - [23/Apr/2020 19:07:08] "[37mGET /static/jquery-3.4.1.min.js HTTP/1.1[0m" 200 -
+2020-04-23 19:07:09,085 INFO werkzeug Thread-6 : 108.190.180.209 - - [23/Apr/2020 19:07:09] "[33mGET /static/popper.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:07:09,087 INFO werkzeug Thread-7 : 108.190.180.209 - - [23/Apr/2020 19:07:09] "[33mGET /static/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+2020-04-23 19:07:09,089 INFO werkzeug Thread-8 : 108.190.180.209 - - [23/Apr/2020 19:07:09] "[33mGET /static/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:07:09,318 INFO werkzeug Thread-9 : 108.190.180.209 - - [23/Apr/2020 19:07:09] "[33mGET /static/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:07:09,320 INFO werkzeug Thread-10 : 108.190.180.209 - - [23/Apr/2020 19:07:09] "[33mGET /static/popper.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:07:09,322 INFO werkzeug Thread-11 : 108.190.180.209 - - [23/Apr/2020 19:07:09] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2020-04-23 19:07:09,323 INFO app Thread-12 : <Request 'http://54.202.153.199:5000/api?command=getCommands' [GET]>
+2020-04-23 19:07:09,324 INFO werkzeug Thread-12 : 108.190.180.209 - - [23/Apr/2020 19:07:09] "[37mGET /api?command=getCommands HTTP/1.1[0m" 200 -
+2020-04-23 19:07:41,434 INFO werkzeug Thread-13 : 108.190.180.209 - - [23/Apr/2020 19:07:41] "[37mGET / HTTP/1.1[0m" 200 -
+2020-04-23 19:07:41,682 INFO werkzeug Thread-14 : 108.190.180.209 - - [23/Apr/2020 19:07:41] "[37mGET /static/popper.min.js HTTP/1.1[0m" 200 -
+2020-04-23 19:07:41,684 INFO werkzeug Thread-16 : 108.190.180.209 - - [23/Apr/2020 19:07:41] "[37mGET /static/bootstrap.min.css HTTP/1.1[0m" 200 -
+2020-04-23 19:07:41,687 INFO werkzeug Thread-15 : 108.190.180.209 - - [23/Apr/2020 19:07:41] "[37mGET /static/bootstrap.min.js HTTP/1.1[0m" 200 -
+2020-04-23 19:07:41,689 INFO werkzeug Thread-17 : 108.190.180.209 - - [23/Apr/2020 19:07:41] "[37mGET /static/jquery-3.4.1.min.js HTTP/1.1[0m" 200 -
+2020-04-23 19:07:42,354 INFO werkzeug Thread-18 : 108.190.180.209 - - [23/Apr/2020 19:07:42] "[33mGET /static/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+2020-04-23 19:07:42,385 INFO werkzeug Thread-19 : 108.190.180.209 - - [23/Apr/2020 19:07:42] "[33mGET /static/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:07:42,387 INFO werkzeug Thread-20 : 108.190.180.209 - - [23/Apr/2020 19:07:42] "[33mGET /static/popper.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:07:42,595 INFO app Thread-21 : <Request 'http://54.202.153.199:5000/api?command=getCommands' [GET]>
+2020-04-23 19:07:42,597 INFO werkzeug Thread-21 : 108.190.180.209 - - [23/Apr/2020 19:07:42] "[37mGET /api?command=getCommands HTTP/1.1[0m" 200 -
+2020-04-23 19:07:42,616 INFO werkzeug Thread-22 : 108.190.180.209 - - [23/Apr/2020 19:07:42] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2020-04-23 19:07:42,621 INFO werkzeug Thread-23 : 108.190.180.209 - - [23/Apr/2020 19:07:42] "[33mGET /static/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:07:42,627 INFO werkzeug Thread-24 : 108.190.180.209 - - [23/Apr/2020 19:07:42] "[33mGET /static/popper.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:10:56,889 INFO app MainThread : EOF REACHED
+2020-04-23 19:10:56,922 INFO werkzeug MainThread :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2020-04-23 19:11:00,472 INFO werkzeug Thread-1 : 108.190.180.209 - - [23/Apr/2020 19:11:00] "[37mGET / HTTP/1.1[0m" 200 -
+2020-04-23 19:11:00,732 INFO werkzeug Thread-2 : 108.190.180.209 - - [23/Apr/2020 19:11:00] "[37mGET /static/bootstrap.min.css HTTP/1.1[0m" 200 -
+2020-04-23 19:11:00,734 INFO werkzeug Thread-3 : 108.190.180.209 - - [23/Apr/2020 19:11:00] "[37mGET /static/popper.min.js HTTP/1.1[0m" 200 -
+2020-04-23 19:11:00,738 INFO werkzeug Thread-4 : 108.190.180.209 - - [23/Apr/2020 19:11:00] "[37mGET /static/bootstrap.min.js HTTP/1.1[0m" 200 -
+2020-04-23 19:11:00,740 INFO werkzeug Thread-5 : 108.190.180.209 - - [23/Apr/2020 19:11:00] "[37mGET /static/jquery-3.4.1.min.js HTTP/1.1[0m" 200 -
+2020-04-23 19:11:01,286 INFO werkzeug Thread-6 : 108.190.180.209 - - [23/Apr/2020 19:11:01] "[33mGET /static/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+2020-04-23 19:11:01,288 INFO werkzeug Thread-7 : 108.190.180.209 - - [23/Apr/2020 19:11:01] "[33mGET /static/popper.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:11:01,290 INFO werkzeug Thread-8 : 108.190.180.209 - - [23/Apr/2020 19:11:01] "[33mGET /static/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:11:01,508 INFO app Thread-10 : <Request 'http://54.202.153.199:5000/api?command=getCommands' [GET]>
+2020-04-23 19:11:01,510 INFO werkzeug Thread-9 : 108.190.180.209 - - [23/Apr/2020 19:11:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2020-04-23 19:11:01,511 INFO werkzeug Thread-10 : 108.190.180.209 - - [23/Apr/2020 19:11:01] "[37mGET /api?command=getCommands HTTP/1.1[0m" 200 -
+2020-04-23 19:11:01,520 INFO werkzeug Thread-11 : 108.190.180.209 - - [23/Apr/2020 19:11:01] "[33mGET /static/popper.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:11:01,530 INFO werkzeug Thread-12 : 108.190.180.209 - - [23/Apr/2020 19:11:01] "[33mGET /static/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:12:19,475 INFO app MainThread : EOF REACHED
+2020-04-23 19:12:19,508 INFO werkzeug MainThread :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2020-04-23 19:12:21,061 INFO werkzeug Thread-1 : 108.190.180.209 - - [23/Apr/2020 19:12:21] "[37mGET / HTTP/1.1[0m" 200 -
+2020-04-23 19:12:21,360 INFO werkzeug Thread-2 : 108.190.180.209 - - [23/Apr/2020 19:12:21] "[37mGET /static/popper.min.js HTTP/1.1[0m" 200 -
+2020-04-23 19:12:21,363 INFO werkzeug Thread-3 : 108.190.180.209 - - [23/Apr/2020 19:12:21] "[37mGET /static/bootstrap.min.js HTTP/1.1[0m" 200 -
+2020-04-23 19:12:21,365 INFO werkzeug Thread-4 : 108.190.180.209 - - [23/Apr/2020 19:12:21] "[37mGET /static/jquery-3.4.1.min.js HTTP/1.1[0m" 200 -
+2020-04-23 19:12:21,367 INFO werkzeug Thread-5 : 108.190.180.209 - - [23/Apr/2020 19:12:21] "[37mGET /static/bootstrap.min.css HTTP/1.1[0m" 200 -
+2020-04-23 19:12:21,925 INFO werkzeug Thread-6 : 108.190.180.209 - - [23/Apr/2020 19:12:21] "[33mGET /static/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:12:21,927 INFO werkzeug Thread-7 : 108.190.180.209 - - [23/Apr/2020 19:12:21] "[33mGET /static/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+2020-04-23 19:12:21,929 INFO werkzeug Thread-8 : 108.190.180.209 - - [23/Apr/2020 19:12:21] "[33mGET /static/popper.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:12:22,146 INFO app Thread-9 : <Request 'http://54.202.153.199:5000/api?command=getCommands' [GET]>
+2020-04-23 19:12:22,148 INFO werkzeug Thread-9 : 108.190.180.209 - - [23/Apr/2020 19:12:22] "[37mGET /api?command=getCommands HTTP/1.1[0m" 200 -
+2020-04-23 19:12:22,150 INFO werkzeug Thread-10 : 108.190.180.209 - - [23/Apr/2020 19:12:22] "[33mGET /static/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:12:22,152 INFO werkzeug Thread-11 : 108.190.180.209 - - [23/Apr/2020 19:12:22] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2020-04-23 19:12:22,179 INFO werkzeug Thread-12 : 108.190.180.209 - - [23/Apr/2020 19:12:22] "[33mGET /static/popper.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:12:57,423 INFO app MainThread : EOF REACHED
+2020-04-23 19:12:57,426 INFO werkzeug MainThread :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2020-04-23 19:13:02,272 INFO werkzeug Thread-1 : 108.190.180.209 - - [23/Apr/2020 19:13:02] "[37mGET / HTTP/1.1[0m" 200 -
+2020-04-23 19:13:02,739 INFO werkzeug Thread-2 : 108.190.180.209 - - [23/Apr/2020 19:13:02] "[33mGET /static/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:13:02,742 INFO werkzeug Thread-3 : 108.190.180.209 - - [23/Apr/2020 19:13:02] "[33mGET /static/popper.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:13:02,743 INFO werkzeug Thread-4 : 108.190.180.209 - - [23/Apr/2020 19:13:02] "[33mGET /static/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+2020-04-23 19:13:02,878 INFO app Thread-5 : <Request 'http://54.202.153.199:5000/api?command=getCommands' [GET]>
+2020-04-23 19:13:02,880 INFO werkzeug Thread-5 : 108.190.180.209 - - [23/Apr/2020 19:13:02] "[37mGET /api?command=getCommands HTTP/1.1[0m" 200 -
+2020-04-23 19:13:02,953 INFO werkzeug Thread-6 : 108.190.180.209 - - [23/Apr/2020 19:13:02] "[33mGET /static/popper.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:13:02,960 INFO werkzeug Thread-7 : 108.190.180.209 - - [23/Apr/2020 19:13:02] "[33mGET /static/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:13:05,945 INFO werkzeug Thread-8 : 108.190.180.209 - - [23/Apr/2020 19:13:05] "[37mGET / HTTP/1.1[0m" 200 -
+2020-04-23 19:13:06,206 INFO werkzeug Thread-10 : 108.190.180.209 - - [23/Apr/2020 19:13:06] "[37mGET /static/bootstrap.min.css HTTP/1.1[0m" 200 -
+2020-04-23 19:13:06,207 INFO werkzeug Thread-11 : 108.190.180.209 - - [23/Apr/2020 19:13:06] "[37mGET /static/popper.min.js HTTP/1.1[0m" 200 -
+2020-04-23 19:13:06,210 INFO werkzeug Thread-9 : 108.190.180.209 - - [23/Apr/2020 19:13:06] "[37mGET /static/bootstrap.min.js HTTP/1.1[0m" 200 -
+2020-04-23 19:13:06,212 INFO werkzeug Thread-12 : 108.190.180.209 - - [23/Apr/2020 19:13:06] "[37mGET /static/jquery-3.4.1.min.js HTTP/1.1[0m" 200 -
+2020-04-23 19:13:06,793 INFO werkzeug Thread-13 : 108.190.180.209 - - [23/Apr/2020 19:13:06] "[33mGET /static/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+2020-04-23 19:13:06,812 INFO werkzeug Thread-14 : 108.190.180.209 - - [23/Apr/2020 19:13:06] "[33mGET /static/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:13:06,814 INFO werkzeug Thread-15 : 108.190.180.209 - - [23/Apr/2020 19:13:06] "[33mGET /static/popper.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:13:07,031 INFO app Thread-16 : <Request 'http://54.202.153.199:5000/api?command=getCommands' [GET]>
+2020-04-23 19:13:07,031 INFO werkzeug Thread-16 : 108.190.180.209 - - [23/Apr/2020 19:13:07] "[37mGET /api?command=getCommands HTTP/1.1[0m" 200 -
+2020-04-23 19:13:07,034 INFO werkzeug Thread-17 : 108.190.180.209 - - [23/Apr/2020 19:13:07] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2020-04-23 19:13:07,035 INFO werkzeug Thread-18 : 108.190.180.209 - - [23/Apr/2020 19:13:07] "[33mGET /static/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:13:07,041 INFO werkzeug Thread-19 : 108.190.180.209 - - [23/Apr/2020 19:13:07] "[33mGET /static/popper.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:13:09,582 INFO werkzeug Thread-20 : 108.190.180.209 - - [23/Apr/2020 19:13:09] "[37mGET / HTTP/1.1[0m" 200 -
+2020-04-23 19:13:09,823 INFO werkzeug Thread-21 : 108.190.180.209 - - [23/Apr/2020 19:13:09] "[37mGET /static/bootstrap.min.css HTTP/1.1[0m" 200 -
+2020-04-23 19:13:09,836 INFO werkzeug Thread-24 : 108.190.180.209 - - [23/Apr/2020 19:13:09] "[37mGET /static/popper.min.js HTTP/1.1[0m" 200 -
+2020-04-23 19:13:09,840 INFO werkzeug Thread-22 : 108.190.180.209 - - [23/Apr/2020 19:13:09] "[37mGET /static/bootstrap.min.js HTTP/1.1[0m" 200 -
+2020-04-23 19:13:09,841 INFO werkzeug Thread-23 : 108.190.180.209 - - [23/Apr/2020 19:13:09] "[37mGET /static/jquery-3.4.1.min.js HTTP/1.1[0m" 200 -
+2020-04-23 19:13:10,352 INFO werkzeug Thread-25 : 108.190.180.209 - - [23/Apr/2020 19:13:10] "[33mGET /static/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+2020-04-23 19:13:10,363 INFO werkzeug Thread-26 : 108.190.180.209 - - [23/Apr/2020 19:13:10] "[33mGET /static/popper.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:13:10,364 INFO werkzeug Thread-27 : 108.190.180.209 - - [23/Apr/2020 19:13:10] "[33mGET /static/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:13:10,579 INFO app Thread-28 : <Request 'http://54.202.153.199:5000/api?command=getCommands' [GET]>
+2020-04-23 19:13:10,579 INFO werkzeug Thread-28 : 108.190.180.209 - - [23/Apr/2020 19:13:10] "[37mGET /api?command=getCommands HTTP/1.1[0m" 200 -
+2020-04-23 19:13:10,582 INFO werkzeug Thread-29 : 108.190.180.209 - - [23/Apr/2020 19:13:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2020-04-23 19:13:10,605 INFO werkzeug Thread-31 : 108.190.180.209 - - [23/Apr/2020 19:13:10] "[33mGET /static/popper.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:13:10,608 INFO werkzeug Thread-30 : 108.190.180.209 - - [23/Apr/2020 19:13:10] "[33mGET /static/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:14:24,125 INFO app MainThread : EOF REACHED
+2020-04-23 19:14:24,132 INFO werkzeug MainThread :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2020-04-23 19:14:26,641 INFO werkzeug Thread-1 : 108.190.180.209 - - [23/Apr/2020 19:14:26] "[37mGET / HTTP/1.1[0m" 200 -
+2020-04-23 19:14:26,905 INFO werkzeug Thread-3 : 108.190.180.209 - - [23/Apr/2020 19:14:26] "[37mGET /static/bootstrap.min.js HTTP/1.1[0m" 200 -
+2020-04-23 19:14:26,907 INFO werkzeug Thread-4 : 108.190.180.209 - - [23/Apr/2020 19:14:26] "[37mGET /static/bootstrap.min.css HTTP/1.1[0m" 200 -
+2020-04-23 19:14:26,909 INFO werkzeug Thread-2 : 108.190.180.209 - - [23/Apr/2020 19:14:26] "[37mGET /static/jquery-3.4.1.min.js HTTP/1.1[0m" 200 -
+2020-04-23 19:14:26,912 INFO werkzeug Thread-5 : 108.190.180.209 - - [23/Apr/2020 19:14:26] "[37mGET /static/popper.min.js HTTP/1.1[0m" 200 -
+2020-04-23 19:14:27,465 INFO werkzeug Thread-6 : 108.190.180.209 - - [23/Apr/2020 19:14:27] "[33mGET /static/popper.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:14:27,467 INFO werkzeug Thread-7 : 108.190.180.209 - - [23/Apr/2020 19:14:27] "[33mGET /static/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:14:27,469 INFO werkzeug Thread-8 : 108.190.180.209 - - [23/Apr/2020 19:14:27] "[33mGET /static/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+2020-04-23 19:14:27,681 INFO app Thread-9 : <Request 'http://54.202.153.199:5000/api?command=getCommands' [GET]>
+2020-04-23 19:14:27,683 INFO werkzeug Thread-9 : 108.190.180.209 - - [23/Apr/2020 19:14:27] "[37mGET /api?command=getCommands HTTP/1.1[0m" 200 -
+2020-04-23 19:14:27,687 INFO werkzeug Thread-10 : 108.190.180.209 - - [23/Apr/2020 19:14:27] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2020-04-23 19:14:27,715 INFO werkzeug Thread-11 : 108.190.180.209 - - [23/Apr/2020 19:14:27] "[33mGET /static/popper.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:14:27,720 INFO werkzeug Thread-12 : 108.190.180.209 - - [23/Apr/2020 19:14:27] "[33mGET /static/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:14:55,176 INFO app MainThread : EOF REACHED
+2020-04-23 19:14:55,180 INFO werkzeug MainThread :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2020-04-23 19:14:57,828 INFO werkzeug Thread-1 : 108.190.180.209 - - [23/Apr/2020 19:14:57] "[37mGET / HTTP/1.1[0m" 200 -
+2020-04-23 19:14:58,080 INFO werkzeug Thread-5 : 108.190.180.209 - - [23/Apr/2020 19:14:58] "[37mGET /static/bootstrap.min.css HTTP/1.1[0m" 200 -
+2020-04-23 19:14:58,082 INFO werkzeug Thread-2 : 108.190.180.209 - - [23/Apr/2020 19:14:58] "[37mGET /static/jquery-3.4.1.min.js HTTP/1.1[0m" 200 -
+2020-04-23 19:14:58,084 INFO werkzeug Thread-3 : 108.190.180.209 - - [23/Apr/2020 19:14:58] "[37mGET /static/popper.min.js HTTP/1.1[0m" 200 -
+2020-04-23 19:14:58,085 INFO werkzeug Thread-4 : 108.190.180.209 - - [23/Apr/2020 19:14:58] "[37mGET /static/bootstrap.min.js HTTP/1.1[0m" 200 -
+2020-04-23 19:14:58,663 INFO werkzeug Thread-6 : 108.190.180.209 - - [23/Apr/2020 19:14:58] "[33mGET /static/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+2020-04-23 19:14:58,668 INFO werkzeug Thread-7 : 108.190.180.209 - - [23/Apr/2020 19:14:58] "[33mGET /static/popper.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:14:58,670 INFO werkzeug Thread-8 : 108.190.180.209 - - [23/Apr/2020 19:14:58] "[33mGET /static/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:14:58,881 INFO app Thread-10 : <Request 'http://54.202.153.199:5000/api?command=getCommands' [GET]>
+2020-04-23 19:14:58,882 INFO werkzeug Thread-10 : 108.190.180.209 - - [23/Apr/2020 19:14:58] "[37mGET /api?command=getCommands HTTP/1.1[0m" 200 -
+2020-04-23 19:14:58,884 INFO werkzeug Thread-9 : 108.190.180.209 - - [23/Apr/2020 19:14:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2020-04-23 19:14:58,911 INFO werkzeug Thread-11 : 108.190.180.209 - - [23/Apr/2020 19:14:58] "[33mGET /static/popper.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:14:58,912 INFO werkzeug Thread-12 : 108.190.180.209 - - [23/Apr/2020 19:14:58] "[33mGET /static/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:18:06,985 INFO app MainThread : EOF REACHED
+2020-04-23 19:18:07,027 INFO werkzeug MainThread :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2020-04-23 19:18:09,775 INFO werkzeug Thread-1 : 108.190.180.209 - - [23/Apr/2020 19:18:09] "[37mGET / HTTP/1.1[0m" 200 -
+2020-04-23 19:18:10,103 INFO werkzeug Thread-2 : 108.190.180.209 - - [23/Apr/2020 19:18:10] "[37mGET /static/bootstrap.min.css HTTP/1.1[0m" 200 -
+2020-04-23 19:18:10,105 INFO werkzeug Thread-3 : 108.190.180.209 - - [23/Apr/2020 19:18:10] "[37mGET /static/popper.min.js HTTP/1.1[0m" 200 -
+2020-04-23 19:18:10,107 INFO werkzeug Thread-4 : 108.190.180.209 - - [23/Apr/2020 19:18:10] "[37mGET /static/bootstrap.min.js HTTP/1.1[0m" 200 -
+2020-04-23 19:18:10,110 INFO werkzeug Thread-5 : 108.190.180.209 - - [23/Apr/2020 19:18:10] "[37mGET /static/jquery-3.4.1.min.js HTTP/1.1[0m" 200 -
+2020-04-23 19:18:10,622 INFO werkzeug Thread-6 : 108.190.180.209 - - [23/Apr/2020 19:18:10] "[33mGET /static/popper.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:18:10,627 INFO werkzeug Thread-7 : 108.190.180.209 - - [23/Apr/2020 19:18:10] "[33mGET /static/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:18:10,669 INFO werkzeug Thread-8 : 108.190.180.209 - - [23/Apr/2020 19:18:10] "[33mGET /static/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+2020-04-23 19:18:10,847 INFO app Thread-10 : <Request 'http://54.202.153.199:5000/api?command=getCommands' [GET]>
+2020-04-23 19:18:10,849 INFO werkzeug Thread-10 : 108.190.180.209 - - [23/Apr/2020 19:18:10] "[37mGET /api?command=getCommands HTTP/1.1[0m" 200 -
+2020-04-23 19:18:10,851 INFO werkzeug Thread-9 : 108.190.180.209 - - [23/Apr/2020 19:18:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2020-04-23 19:18:10,860 INFO werkzeug Thread-11 : 108.190.180.209 - - [23/Apr/2020 19:18:10] "[33mGET /static/popper.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:18:10,864 INFO werkzeug Thread-12 : 108.190.180.209 - - [23/Apr/2020 19:18:10] "[33mGET /static/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:18:38,825 INFO app MainThread : EOF REACHED
+2020-04-23 19:18:38,828 INFO werkzeug MainThread :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2020-04-23 19:18:41,925 INFO werkzeug Thread-1 : 108.190.180.209 - - [23/Apr/2020 19:18:41] "[37mGET / HTTP/1.1[0m" 200 -
+2020-04-23 19:18:42,164 INFO werkzeug Thread-2 : 108.190.180.209 - - [23/Apr/2020 19:18:42] "[37mGET /static/jquery-3.4.1.min.js HTTP/1.1[0m" 200 -
+2020-04-23 19:18:42,165 INFO werkzeug Thread-4 : 108.190.180.209 - - [23/Apr/2020 19:18:42] "[37mGET /static/popper.min.js HTTP/1.1[0m" 200 -
+2020-04-23 19:18:42,166 INFO werkzeug Thread-3 : 108.190.180.209 - - [23/Apr/2020 19:18:42] "[37mGET /static/bootstrap.min.js HTTP/1.1[0m" 200 -
+2020-04-23 19:18:42,171 INFO werkzeug Thread-5 : 108.190.180.209 - - [23/Apr/2020 19:18:42] "[37mGET /static/bootstrap.min.css HTTP/1.1[0m" 200 -
+2020-04-23 19:18:42,714 INFO werkzeug Thread-6 : 108.190.180.209 - - [23/Apr/2020 19:18:42] "[33mGET /static/popper.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:18:42,716 INFO werkzeug Thread-7 : 108.190.180.209 - - [23/Apr/2020 19:18:42] "[33mGET /static/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+2020-04-23 19:18:42,717 INFO werkzeug Thread-8 : 108.190.180.209 - - [23/Apr/2020 19:18:42] "[33mGET /static/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:18:42,920 INFO app Thread-9 : <Request 'http://54.202.153.199:5000/api?command=getCommands' [GET]>
+2020-04-23 19:18:42,922 INFO werkzeug Thread-9 : 108.190.180.209 - - [23/Apr/2020 19:18:42] "[37mGET /api?command=getCommands HTTP/1.1[0m" 200 -
+2020-04-23 19:18:42,923 INFO werkzeug Thread-10 : 108.190.180.209 - - [23/Apr/2020 19:18:42] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2020-04-23 19:18:42,925 INFO werkzeug Thread-11 : 108.190.180.209 - - [23/Apr/2020 19:18:42] "[33mGET /static/popper.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:18:42,938 INFO werkzeug Thread-12 : 108.190.180.209 - - [23/Apr/2020 19:18:42] "[33mGET /static/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:18:52,740 INFO app Thread-13 : <Request 'http://54.202.153.199:5000/api?command=getCompound&text=sad' [GET]>
+2020-04-23 19:18:52,742 INFO app Thread-13 : sad
+2020-04-23 19:18:56,167 INFO werkzeug Thread-13 : 108.190.180.209 - - [23/Apr/2020 19:18:56] "[37mGET /api?command=getCompound&text=sad HTTP/1.1[0m" 200 -
+2020-04-23 19:21:53,751 INFO app MainThread : EOF REACHED
+2020-04-23 19:21:53,772 INFO werkzeug MainThread :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2020-04-23 19:21:55,265 INFO werkzeug Thread-1 : 108.190.180.209 - - [23/Apr/2020 19:21:55] "[37mGET / HTTP/1.1[0m" 200 -
+2020-04-23 19:21:55,537 INFO werkzeug Thread-2 : 108.190.180.209 - - [23/Apr/2020 19:21:55] "[37mGET /static/bootstrap.min.js HTTP/1.1[0m" 200 -
+2020-04-23 19:21:55,540 INFO werkzeug Thread-3 : 108.190.180.209 - - [23/Apr/2020 19:21:55] "[37mGET /static/bootstrap.min.css HTTP/1.1[0m" 200 -
+2020-04-23 19:21:55,542 INFO werkzeug Thread-4 : 108.190.180.209 - - [23/Apr/2020 19:21:55] "[37mGET /static/popper.min.js HTTP/1.1[0m" 200 -
+2020-04-23 19:21:55,544 INFO werkzeug Thread-5 : 108.190.180.209 - - [23/Apr/2020 19:21:55] "[37mGET /static/jquery-3.4.1.min.js HTTP/1.1[0m" 200 -
+2020-04-23 19:21:56,123 INFO werkzeug Thread-6 : 108.190.180.209 - - [23/Apr/2020 19:21:56] "[33mGET /static/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+2020-04-23 19:21:56,125 INFO werkzeug Thread-7 : 108.190.180.209 - - [23/Apr/2020 19:21:56] "[33mGET /static/popper.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:21:56,127 INFO werkzeug Thread-8 : 108.190.180.209 - - [23/Apr/2020 19:21:56] "[33mGET /static/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:21:56,339 INFO app Thread-10 : <Request 'http://54.202.153.199:5000/api?command=getCommands' [GET]>
+2020-04-23 19:21:56,340 INFO werkzeug Thread-10 : 108.190.180.209 - - [23/Apr/2020 19:21:56] "[37mGET /api?command=getCommands HTTP/1.1[0m" 200 -
+2020-04-23 19:21:56,347 INFO werkzeug Thread-9 : 108.190.180.209 - - [23/Apr/2020 19:21:56] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2020-04-23 19:21:56,395 INFO werkzeug Thread-12 : 108.190.180.209 - - [23/Apr/2020 19:21:56] "[33mGET /static/popper.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:21:56,399 INFO werkzeug Thread-11 : 108.190.180.209 - - [23/Apr/2020 19:21:56] "[33mGET /static/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:23:04,686 INFO werkzeug Thread-13 : 108.190.180.209 - - [23/Apr/2020 19:23:04] "[37mGET / HTTP/1.1[0m" 200 -
+2020-04-23 19:23:04,989 INFO werkzeug Thread-14 : 108.190.180.209 - - [23/Apr/2020 19:23:04] "[33mGET /static/popper.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:23:05,009 INFO werkzeug Thread-15 : 108.190.180.209 - - [23/Apr/2020 19:23:05] "[33mGET /static/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:23:05,037 INFO werkzeug Thread-16 : 108.190.180.209 - - [23/Apr/2020 19:23:05] "[33mGET /static/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+2020-04-23 19:23:05,201 INFO werkzeug Thread-17 : 108.190.180.209 - - [23/Apr/2020 19:23:05] "[33mGET /static/popper.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:23:05,202 INFO app Thread-18 : <Request 'http://54.202.153.199:5000/api?command=getCommands' [GET]>
+2020-04-23 19:23:05,203 INFO werkzeug Thread-18 : 108.190.180.209 - - [23/Apr/2020 19:23:05] "[37mGET /api?command=getCommands HTTP/1.1[0m" 200 -
+2020-04-23 19:23:05,230 INFO werkzeug Thread-19 : 108.190.180.209 - - [23/Apr/2020 19:23:05] "[33mGET /static/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:24:04,279 INFO werkzeug Thread-20 : 108.190.180.209 - - [23/Apr/2020 19:24:04] "[37mGET / HTTP/1.1[0m" 200 -
+2020-04-23 19:24:04,584 INFO werkzeug Thread-21 : 108.190.180.209 - - [23/Apr/2020 19:24:04] "[33mGET /static/popper.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:24:04,586 INFO werkzeug Thread-22 : 108.190.180.209 - - [23/Apr/2020 19:24:04] "[33mGET /static/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+2020-04-23 19:24:04,602 INFO werkzeug Thread-23 : 108.190.180.209 - - [23/Apr/2020 19:24:04] "[33mGET /static/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:24:04,801 INFO app Thread-24 : <Request 'http://54.202.153.199:5000/api?command=getCommands' [GET]>
+2020-04-23 19:24:04,803 INFO werkzeug Thread-24 : 108.190.180.209 - - [23/Apr/2020 19:24:04] "[37mGET /api?command=getCommands HTTP/1.1[0m" 200 -
+2020-04-23 19:24:04,804 INFO werkzeug Thread-25 : 108.190.180.209 - - [23/Apr/2020 19:24:04] "[33mGET /static/popper.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:24:04,817 INFO werkzeug Thread-26 : 108.190.180.209 - - [23/Apr/2020 19:24:04] "[33mGET /static/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:25:31,035 INFO app MainThread : EOF REACHED
+2020-04-23 19:25:31,079 INFO werkzeug MainThread :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2020-04-23 19:25:32,809 INFO werkzeug Thread-1 : 108.190.180.209 - - [23/Apr/2020 19:25:32] "[37mGET / HTTP/1.1[0m" 200 -
+2020-04-23 19:25:33,074 INFO werkzeug Thread-3 : 108.190.180.209 - - [23/Apr/2020 19:25:33] "[37mGET /static/bootstrap.min.js HTTP/1.1[0m" 200 -
+2020-04-23 19:25:33,076 INFO werkzeug Thread-4 : 108.190.180.209 - - [23/Apr/2020 19:25:33] "[37mGET /static/bootstrap.min.css HTTP/1.1[0m" 200 -
+2020-04-23 19:25:33,078 INFO werkzeug Thread-2 : 108.190.180.209 - - [23/Apr/2020 19:25:33] "[37mGET /static/jquery-3.4.1.min.js HTTP/1.1[0m" 200 -
+2020-04-23 19:25:33,080 INFO werkzeug Thread-5 : 108.190.180.209 - - [23/Apr/2020 19:25:33] "[37mGET /static/popper.min.js HTTP/1.1[0m" 200 -
+2020-04-23 19:25:33,618 INFO werkzeug Thread-6 : 108.190.180.209 - - [23/Apr/2020 19:25:33] "[33mGET /static/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+2020-04-23 19:25:33,624 INFO werkzeug Thread-7 : 108.190.180.209 - - [23/Apr/2020 19:25:33] "[33mGET /static/popper.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:25:33,626 INFO werkzeug Thread-8 : 108.190.180.209 - - [23/Apr/2020 19:25:33] "[33mGET /static/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:25:33,844 INFO werkzeug Thread-9 : 108.190.180.209 - - [23/Apr/2020 19:25:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2020-04-23 19:25:33,846 INFO app Thread-10 : <Request 'http://54.202.153.199:5000/api?command=getCommands' [GET]>
+2020-04-23 19:25:33,847 INFO werkzeug Thread-10 : 108.190.180.209 - - [23/Apr/2020 19:25:33] "[37mGET /api?command=getCommands HTTP/1.1[0m" 200 -
+2020-04-23 19:25:33,849 INFO werkzeug Thread-11 : 108.190.180.209 - - [23/Apr/2020 19:25:33] "[33mGET /static/popper.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:25:33,862 INFO werkzeug Thread-12 : 108.190.180.209 - - [23/Apr/2020 19:25:33] "[33mGET /static/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:25:43,573 INFO app MainThread : EOF REACHED
+2020-04-23 19:25:43,576 INFO werkzeug MainThread :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2020-04-23 19:25:45,708 INFO werkzeug Thread-1 : 108.190.180.209 - - [23/Apr/2020 19:25:45] "[37mGET / HTTP/1.1[0m" 200 -
+2020-04-23 19:25:45,938 INFO werkzeug Thread-3 : 108.190.180.209 - - [23/Apr/2020 19:25:45] "[37mGET /static/bootstrap.min.css HTTP/1.1[0m" 200 -
+2020-04-23 19:25:45,940 INFO werkzeug Thread-2 : 108.190.180.209 - - [23/Apr/2020 19:25:45] "[37mGET /static/popper.min.js HTTP/1.1[0m" 200 -
+2020-04-23 19:25:45,942 INFO werkzeug Thread-4 : 108.190.180.209 - - [23/Apr/2020 19:25:45] "[37mGET /static/bootstrap.min.js HTTP/1.1[0m" 200 -
+2020-04-23 19:25:45,946 INFO werkzeug Thread-5 : 108.190.180.209 - - [23/Apr/2020 19:25:45] "[37mGET /static/jquery-3.4.1.min.js HTTP/1.1[0m" 200 -
+2020-04-23 19:25:46,484 INFO werkzeug Thread-6 : 108.190.180.209 - - [23/Apr/2020 19:25:46] "[33mGET /static/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+2020-04-23 19:25:46,486 INFO werkzeug Thread-7 : 108.190.180.209 - - [23/Apr/2020 19:25:46] "[33mGET /static/popper.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:25:46,494 INFO werkzeug Thread-8 : 108.190.180.209 - - [23/Apr/2020 19:25:46] "[33mGET /static/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:25:46,702 INFO werkzeug Thread-9 : 108.190.180.209 - - [23/Apr/2020 19:25:46] "[33mGET /static/popper.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:25:46,704 INFO werkzeug Thread-10 : 108.190.180.209 - - [23/Apr/2020 19:25:46] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2020-04-23 19:25:46,706 INFO app Thread-11 : <Request 'http://54.202.153.199:5000/api?command=getCommands' [GET]>
+2020-04-23 19:25:46,707 INFO werkzeug Thread-11 : 108.190.180.209 - - [23/Apr/2020 19:25:46] "[37mGET /api?command=getCommands HTTP/1.1[0m" 200 -
+2020-04-23 19:25:46,708 INFO werkzeug Thread-12 : 108.190.180.209 - - [23/Apr/2020 19:25:46] "[33mGET /static/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:26:13,709 INFO app Thread-13 : <Request 'http://54.202.153.199:5000/api?command=getCommands' [GET]>
+2020-04-23 19:26:13,710 INFO werkzeug Thread-13 : 108.190.180.209 - - [23/Apr/2020 19:26:13] "[37mGET /api?command=getCommands HTTP/1.1[0m" 200 -
+2020-04-23 19:26:40,970 INFO app Thread-14 : <Request 'http://54.202.153.199:5000/api?command=getCommands' [GET]>
+2020-04-23 19:26:40,972 INFO werkzeug Thread-14 : 108.190.180.209 - - [23/Apr/2020 19:26:40] "[37mGET /api?command=getCommands HTTP/1.1[0m" 200 -
+2020-04-23 19:26:56,544 INFO app Thread-15 : <Request 'http://54.202.153.199:5000/api?command=getCommands' [GET]>
+2020-04-23 19:26:56,546 INFO werkzeug Thread-15 : 108.190.180.209 - - [23/Apr/2020 19:26:56] "[37mGET /api?command=getCommands HTTP/1.1[0m" 200 -
+2020-04-23 19:27:42,371 INFO app Thread-16 : <Request 'http://54.202.153.199:5000/api?command=getCommands' [GET]>
+2020-04-23 19:27:42,372 INFO werkzeug Thread-16 : 108.190.180.209 - - [23/Apr/2020 19:27:42] "[37mGET /api?command=getCommands HTTP/1.1[0m" 200 -
+2020-04-23 19:28:03,127 INFO app Thread-17 : <Request 'http://54.202.153.199:5000/api?command=getCommands' [GET]>
+2020-04-23 19:28:03,129 INFO werkzeug Thread-17 : 108.190.180.209 - - [23/Apr/2020 19:28:03] "[37mGET /api?command=getCommands HTTP/1.1[0m" 200 -
+2020-04-23 19:31:00,125 INFO app MainThread : EOF REACHED
+2020-04-23 19:31:00,166 INFO werkzeug MainThread :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2020-04-23 19:31:05,340 INFO werkzeug Thread-1 : 108.190.180.209 - - [23/Apr/2020 19:31:05] "[37mGET / HTTP/1.1[0m" 200 -
+2020-04-23 19:31:05,607 INFO werkzeug Thread-2 : 108.190.180.209 - - [23/Apr/2020 19:31:05] "[37mGET /static/bootstrap.min.css HTTP/1.1[0m" 200 -
+2020-04-23 19:31:05,614 INFO werkzeug Thread-3 : 108.190.180.209 - - [23/Apr/2020 19:31:05] "[37mGET /static/popper.min.js HTTP/1.1[0m" 200 -
+2020-04-23 19:31:05,617 INFO werkzeug Thread-4 : 108.190.180.209 - - [23/Apr/2020 19:31:05] "[37mGET /static/jquery-3.4.1.min.js HTTP/1.1[0m" 200 -
+2020-04-23 19:31:05,618 INFO werkzeug Thread-5 : 108.190.180.209 - - [23/Apr/2020 19:31:05] "[37mGET /static/bootstrap.min.js HTTP/1.1[0m" 200 -
+2020-04-23 19:31:06,167 INFO werkzeug Thread-6 : 108.190.180.209 - - [23/Apr/2020 19:31:06] "[33mGET /static/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+2020-04-23 19:31:06,169 INFO werkzeug Thread-7 : 108.190.180.209 - - [23/Apr/2020 19:31:06] "[33mGET /static/popper.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:31:06,170 INFO werkzeug Thread-8 : 108.190.180.209 - - [23/Apr/2020 19:31:06] "[33mGET /static/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:31:06,375 INFO werkzeug Thread-10 : 108.190.180.209 - - [23/Apr/2020 19:31:06] "[33mGET /static/popper.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:31:06,375 INFO app Thread-9 : <Request 'http://54.202.153.199:5000/api?command=getCommands' [GET]>
+2020-04-23 19:31:06,376 INFO werkzeug Thread-9 : 108.190.180.209 - - [23/Apr/2020 19:31:06] "[37mGET /api?command=getCommands HTTP/1.1[0m" 200 -
+2020-04-23 19:31:06,379 INFO werkzeug Thread-11 : 108.190.180.209 - - [23/Apr/2020 19:31:06] "[33mGET /static/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:31:06,381 INFO werkzeug Thread-12 : 108.190.180.209 - - [23/Apr/2020 19:31:06] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2020-04-23 19:31:30,949 INFO app Thread-13 : <Request 'http://54.202.153.199:5000/api?command=getCommands' [GET]>
+2020-04-23 19:31:30,951 INFO werkzeug Thread-13 : 108.190.180.209 - - [23/Apr/2020 19:31:30] "[37mGET /api?command=getCommands HTTP/1.1[0m" 200 -
+2020-04-23 19:32:50,220 INFO app MainThread : EOF REACHED
+2020-04-23 19:32:50,253 INFO werkzeug MainThread :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2020-04-23 19:32:55,029 INFO app Thread-1 : <Request 'http://54.202.153.199:5000/api?command=getCommands' [GET]>
+2020-04-23 19:32:55,031 INFO werkzeug Thread-1 : 108.190.180.209 - - [23/Apr/2020 19:32:55] "[37mGET /api?command=getCommands HTTP/1.1[0m" 200 -
+2020-04-23 19:33:36,768 INFO werkzeug Thread-2 : 108.190.180.209 - - [23/Apr/2020 19:33:36] "[37mGET / HTTP/1.1[0m" 200 -
+2020-04-23 19:33:37,089 INFO werkzeug Thread-3 : 108.190.180.209 - - [23/Apr/2020 19:33:37] "[33mGET /static/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+2020-04-23 19:33:37,092 INFO werkzeug Thread-4 : 108.190.180.209 - - [23/Apr/2020 19:33:37] "[33mGET /static/popper.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:33:37,094 INFO werkzeug Thread-5 : 108.190.180.209 - - [23/Apr/2020 19:33:37] "[33mGET /static/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:33:37,313 INFO app Thread-6 : <Request 'http://54.202.153.199:5000/api?command=getCommands' [GET]>
+2020-04-23 19:33:37,314 INFO werkzeug Thread-6 : 108.190.180.209 - - [23/Apr/2020 19:33:37] "[37mGET /api?command=getCommands HTTP/1.1[0m" 200 -
+2020-04-23 19:33:37,322 INFO werkzeug Thread-7 : 108.190.180.209 - - [23/Apr/2020 19:33:37] "[33mGET /static/popper.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:33:37,324 INFO werkzeug Thread-8 : 108.190.180.209 - - [23/Apr/2020 19:33:37] "[33mGET /static/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:33:41,413 INFO app Thread-9 : <Request 'http://54.202.153.199:5000/api?command=getCompound&text=wonderful!' [GET]>
+2020-04-23 19:33:41,414 INFO app Thread-9 : wonderful!
+2020-04-23 19:33:44,822 INFO werkzeug Thread-9 : 108.190.180.209 - - [23/Apr/2020 19:33:44] "[37mGET /api?command=getCompound&text=wonderful! HTTP/1.1[0m" 200 -
+2020-04-23 19:34:34,562 INFO werkzeug Thread-10 : 108.190.180.209 - - [23/Apr/2020 19:34:34] "[37mGET / HTTP/1.1[0m" 200 -
+2020-04-23 19:34:34,861 INFO werkzeug Thread-11 : 108.190.180.209 - - [23/Apr/2020 19:34:34] "[33mGET /static/popper.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:34:34,863 INFO werkzeug Thread-12 : 108.190.180.209 - - [23/Apr/2020 19:34:34] "[33mGET /static/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+2020-04-23 19:34:34,865 INFO werkzeug Thread-13 : 108.190.180.209 - - [23/Apr/2020 19:34:34] "[33mGET /static/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:34:35,082 INFO app Thread-14 : <Request 'http://54.202.153.199:5000/api?command=getCommands' [GET]>
+2020-04-23 19:34:35,084 INFO werkzeug Thread-14 : 108.190.180.209 - - [23/Apr/2020 19:34:35] "[37mGET /api?command=getCommands HTTP/1.1[0m" 200 -
+2020-04-23 19:34:35,086 INFO werkzeug Thread-15 : 108.190.180.209 - - [23/Apr/2020 19:34:35] "[33mGET /static/popper.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:34:35,107 INFO werkzeug Thread-16 : 108.190.180.209 - - [23/Apr/2020 19:34:35] "[33mGET /static/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+2020-04-23 19:34:38,146 INFO app Thread-17 : <Request 'http://54.202.153.199:5000/api?command=getCompound&text=amazing!' [GET]>
+2020-04-23 19:34:38,147 INFO app Thread-17 : amazing!
+2020-04-23 19:34:38,150 INFO werkzeug Thread-17 : 108.190.180.209 - - [23/Apr/2020 19:34:38] "[37mGET /api?command=getCompound&text=amazing! HTTP/1.1[0m" 200 -
+2020-04-23 19:35:08,968 INFO app Thread-18 : <Request 'http://54.202.153.199:5000/api?command=getCompound&text=amazing!' [GET]>
+2020-04-23 19:35:08,969 INFO app Thread-18 : amazing!
+2020-04-23 19:35:08,972 INFO werkzeug Thread-18 : 108.190.180.209 - - [23/Apr/2020 19:35:08] "[37mGET /api?command=getCompound&text=amazing! HTTP/1.1[0m" 200 -
+2020-04-23 19:35:15,691 INFO app MainThread : EOF REACHED
+2020-04-23 19:35:15,725 INFO werkzeug MainThread :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)

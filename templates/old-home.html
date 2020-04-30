@@ -1,0 +1,91 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+	<br><br><br><br>
+	<h1>Text Analytics API Lab<span> -- now with transformers!🤗</span></h1>
+	<p>Use the command selector below to test API commands. Otherwise, use the url paramaters as follows: </p>
+	<p><b>TODO:</b> OCR, file upload</p>
+	<div class="dropdown" id="commandDropdown">
+	  <h2 style="display:inline;">Command:</h2>
+	  <button style="display:inline;" class="btn btn-secondary dropdown-toggle" type="button" id="currentCommand" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">getCompound</button>
+	  <div class="dropdown-menu" aria-labelledby="currentCommand">
+		<button class="dropdown-item" type="button" onclick="changeCommand(this)">getSentiment</button>
+		<button class="dropdown-item" type="button" onclick="changeCommand(this)">getSentimentScore</button>
+		<button class="dropdown-item" type="button" onclick="changeCommand(this)">getEntities</button>
+		<button class="dropdown-item" type="button" onclick="changeCommand(this)">getNouns</button>
+		  <button class="dropdown-item" type="button" onclick="changeCommand(this)">getURL</button>
+	  </div>
+	</div>
+	<h4 id="command">getCompound</h2>
+	<i id="description">/api?command=getSentiment</i>
+	<form action="/api?command=getCompound" id="apiInput">
+	  <div class="form-group">
+		<label for="text">Input your text below:</label>
+		<textarea type="text" class="form-control" placeholder="Enter text" id="text" name="text" autofocus="autofocus"></textarea>
+	  </div>
+	  <button type="submit" class="btn btn-primary">Submit</button>
+	</form>
+	<br />
+	<table class="table" id="output_table">
+		<thead>
+			<tr>
+				<th scope="col">Raw Output</th>
+				<th scope="col">Sentiment</th>
+				<th scope="col">Nouns</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th id="form_output"></th>
+				<th id="output_sentiment"></th>
+				<th id="output_nouns"></th>
+			</tr>
+		</tbody>
+	</table>
+
+	<script src="static/jquery-3.4.1.min.js"></script>
+	<script>window.jQuery || document.write('<script src="static/jquery-slim.min.js"><\/script>')</script>
+	<script src="static/popper.min.js"></script>
+	<script src="static/bootstrap.min.js"></script>
+	<script>
+	  function changeCommand(clicked_command){
+		var previousCommand=document.getElementById('currentCommand').innerHTML;
+		document.getElementById('currentCommand').innerHTML=clicked_command.innerHTML;
+		var newCommand=clicked_command.innerHTML;
+		clicked_command.innerHTML=previousCommand;
+		document.getElementById('command').innerHTML = newCommand;
+		document.getElementById('apiInput').action = "/api?command="+newCommand;
+	  }
+	</script>
+	<script>
+	$(document).ready(function () { // Local functions like page updates, data send from form
+		$('#apiInput').on('submit', function(e) {
+			e.preventDefault();
+			$.ajax({
+				url : $(this).attr('action') || window.location.pathname,
+				type: "GET",
+				data: $(this).serialize(),
+				success: function (data) {
+					$("#form_output").html(data);
+				},
+				error: function (jXHR, textStatus, errorThrown) {
+					alert(errorThrown);
+				},
+				complete: function (data){
+					console.log(data.responseText);
+					//console.log(data.responseText["SentimentScore"]);
+					var output = document.getElementById("form_output").innerHTML;
+					console.log(output);
+					console.alert("eet");
+				},
+			});
+		});
+	});
+	console.log("beep boop");</script>
+
+<!-- End of ETA Embed Widget -->
+
+<script src="static/popper.min.js"></script>
+<script src="static/bootstrap.min.js"></script>
+{% endblock %}

@@ -1,0 +1,73 @@
+{% include "layout.htm" %}
+
+<!-- Start of ETA Widget -->
+<div class="container" style="border: 1px solid #ddf; padding: 15px;">
+	<div class="row">
+		<div class="col-md-8">
+			<h1>Text Analytics Sentiment Lab</h1>
+			<form action="/api?command=getSentimentScore" id="apiInput">
+				<div class="form-group">
+					<label for="text">Type in something you might say, and we'll tell you the 'sentiment' of that statement.</label>
+					<textarea type="text" class="form-control" placeholder="Enter text" id="text" name="text" autofocus="autofocus"></textarea>
+				</div>
+				<button type="submit" class="btn btn-primary">Submit</button>
+			</form>
+		</div>
+		<div class="col-md-4">
+			<table class="table" id="output_table">
+				<thead>
+					<tr>
+						<th scope="col">Sentiment Score</th>
+						<th scope="col">Sentiment</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th id="output_sentiment_score"></th>
+						<th class="emoji"><img id="output_sentiment" width="64px" src="static/thinking.png"></img></th>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+
+<script>
+$(document).ready(function () { // Local functions like page updates, data send from form
+	$('#apiInput').on('submit', function(e) {
+		e.preventDefault();
+		$.ajax({
+			url : $(this).attr('action') || window.location.pathname,
+			type: "GET",
+			data: $(this).serialize(),
+			success: function (data) {
+				$("#output_sentiment_score").html(data);
+			},
+			error: function (jXHR, textStatus, errorThrown) {
+				alert(errorThrown);
+			},
+			complete: function (data){
+				console.log(data.responseText);
+				if (data.responseText > 0.5) { // PERFECT!  1 : 0.5
+					document.getElementById("output_sentiment").src = "static/happy.png"; 
+				}
+				if (data.responseText > 0.3 && data.responseText < 0.49) { // GOOD!  0.5 : 0.3
+					document.getElementById("output_sentiment").src = "static/cowboy.png";
+				}
+				if (data.responseText > -0.3 && 0.3 > data.responseText ) { // OK!  0.3 : -0.3
+					document.getElementById("output_sentiment").src = "static/neutral.png";
+				}
+				if (data.responseText < -0.3 && -0.51 < data.responseText ) { // SAD!  -0.3 : -0.5
+					document.getElementById("output_sentiment").src = "static/sad.png";
+				}
+				if (data.responseText < -0.5 && -0.3 > data.responseText) { // TERRIBLE!  -0.5 : -1
+					document.getElementById("output_sentiment").src = "static/angry.png";
+				}
+			},
+		});
+	});
+});
+console.log("Sentiment Widget Ready!");</script>
+
+<!-- End of ETA Embed Widget -->
+
